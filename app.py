@@ -1,64 +1,152 @@
-print("Title of program: Post Exam Activity bot")
+print("Title of program: Percy Jackson Series Quiz")
 print()
-while True:
-  description = input("Could you describe how you feel after the examinations?")
 
-  list_of_words = description.split()
+counter = 0
+score = 0
+total_num_of_qn = 4
 
-  feelings_list = []
-  encouragement_list = []
-  counter = 0
+
+counter +=1
+tracker = 0
+
+while tracker !=1:
   
-  for each_word in list_of_words:
-    
-    if each_word == "happy":
-      feelings_list.append("happy")
-      encouragement_list.append("Keep smiling. Life is good!")
-      counter += 1
-    if each_word == "bored":
-      feelings_list.append("bored")
-      encouragement_list.append("Find something fun to do")
-      counter += 1
-    if each_word == "tiring":
-      feelings_list.append("tiring")
-      encouragement_list.append("Get some sleep")
-      counter += 1
-    if each_word == "relieved":
-      feelings_list.append("relieved")
-      encouragement_list.append("Relax after the stressful examinations")
-      counter += 1
-
-    if each_word == "dead tired":
-      feelings_list.append("dead tired")
-      encouragement_list.append("Just find something fun to do")
-      counter += 1
-     if each_word == "sad":
-      feelings_list.append("sad")
-      encouragement_list.append("talk to your friends")
-      counter += 1  
-      
-    if counter == 0:
-
-      output = "Sorry I don't really understand. Please use different words?"
-
-  elif counter == 1:
-    
-      output = "It seems that you are feeling quite " + feelings_list[0] + ". However, do remember to "+ encouragement_list[0] + "! Hope you feel better :)"  
-
+  print("Q"+str(counter)+") "+ "Who is the father of the olympians?")
+  print("   a) Kronos")
+  print("   b) Ouranus")
+  print("   c) Kronas")
+  print("   d) Uranus")
+  answer = input("Your answer: ")
+  answer = answer.lower()
+  if answer == "a":
+    output = "Yes!"
+    score +=1
+  elif answer == "b":
+    output = "Try again"
+    score -=1
+  elif answer == "c":
+    output = "Read carefully"
+    tracker =1
+    score -=1
+  elif answer == "d":
+    output = "Nope, try again"
+    score -=1
   else:
+    output = "Please choose a, b, c or d only."
+  
+  print()
+  print(output)
+  print()
+  print("Your current score: " + str(round((score/total_num_of_qn*100),1)) + "%"  )
+  print()
+  print()
+  
 
-    feelings = ""    
-    for i in range(len(feelings_list)-1):
-      feelings += feelings_list[i] + ", "
-    feelings += "and " + feelings_list[-1]
+
+counter +=1
+tracker = 0
+
+while tracker !=1:
+  
+  print("Q"+str(counter)+") "+ "Who is the god of the sky and leader of the olympians?")
+  print("   a) Zeus")
+  print("   b) Poseidon")
+  print("   c) Hades")
+  print("   d) Apollo")
+  answer = input("Your answer: ")
+  answer = answer.lower()
+  if answer == "a":
+    output = "yes congratulations you have passed your mathematics and eyesight test"
+    tracker =1
+    score +=1
+  elif answer == "b":
+    output = "nope"
+    score -=1
+  elif answer == "c":
+    output = "sorry but no"
+    score -=1
     
-    encouragement = ""    
-    for j in range(len(encouragement_list)-1):
-      encouragement += encouragement_list[i] + ", "
-    encouragement += "and " + encouragement_list[-1]
-
-    output = "It seems that you are feeling quite " + feelings + ". Please always remember "+ encouragement + "! Hope you feel better :)"
+  elif answer == "d":
+    output = "try again"
+    score -=1
+  else:
+    output = "Please choose a, b, c or d only."
 
   print()
   print(output)
   print()
+  print("Your current score: " + str(round((score/total_num_of_qn*100),1)) + "%"  )
+  print()
+  print()
+  
+  
+
+counter +=1
+tracker = 0
+
+while tracker !=1:
+  
+  print("Q"+str(counter)+") "+ "Who is the wife of Zeus?")
+  print("   a) Amphrodite")
+  print("   b) Athena")
+  print("   c) Demeter")
+  print("   d) Hera")
+  answer = input("Your answer: ")
+  answer = answer.lower()
+  if answer == "a":
+    output = "that's not quite right"
+    score -=1
+  elif answer == "b":
+    output = "are you really sure?"
+    score -=1
+  elif answer == "c":
+    output = "check"
+    score -=1
+    
+  elif answer == "d":
+    output = "congratulations"
+    tracker =1
+    score +=1
+  else:
+    output = "Please choose a, b, c or d only."
+
+    
+  
+
+counter +=1
+tracker = 0
+
+while tracker !=1:
+  
+  print("Q"+str(counter)+") "+ "Who is the godly parent of Percy and Jason respectively?")
+  print("   a) Neptune, Zeus")
+  print("   b) Pluto, Poseidon")
+  print("   c) Poseidon, Jupiter")
+  print("   d) Neptune, Juno")
+  answer = input("Your answer: ")
+  answer = answer.lower()
+  if answer == "a":
+    output = "that's not quite right"
+    score -=1
+  elif answer == "b":
+    output = "are you really sure?"
+    score -=1
+  elif answer == "c":
+    output = "yes!!!"
+    score -=1
+    
+  elif answer == "d":
+    output = "try again"
+    tracker =1
+    score +=1
+  else:
+    output = "Please choose a, b, c or d only."
+    
+  print()
+  print(output.lower())
+  print()
+  print("Your current score: " + str(round((score/total_num_of_qn*100),1)) + "%"  )
+  print()
+  print()
+  
+print("End of quiz!")
