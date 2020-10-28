@@ -13,7 +13,7 @@ while tracker !=1:
   
   print("Q"+str(counter)+") "+ "Who is the father of the olympians?")
   print("   a) Kronos")
-  print("   b) Ouranus")
+  print("   b) Saturn")
   print("   c) Kronas")
   print("   d) Uranus")
   answer = input("Your answer: ")
@@ -56,7 +56,7 @@ while tracker !=1:
   answer = input("Your answer: ")
   answer = answer.lower()
   if answer == "a":
-    output = "yes congratulations you have passed your mathematics and eyesight test"
+    output = "yes congratulations you have gotten the correct answer"
     tracker =1
     score +=1
   elif answer == "b":
@@ -72,6 +72,29 @@ while tracker !=1:
   else:
     output = "Please choose a, b, c or d only."
 
+ #Qn 3   
+while tracker !=1:
+  
+  print("Q"+str(counter)+") "+ "who are the offspring of medusa")
+  print("   a) Chyrsoar and pegasus")
+  print("   b) Damasen and Ipaetus")
+  print("   c) Triton and Nero")
+  print("   d) Apollo")
+  answer = input("Your answer: ")
+  answer = answer.lower()
+  if answer == "a":
+    output = "yes congratulations it is the correct answer"
+    tracker =1
+    score +=1
+  elif answer == "b":
+    output = "nope"
+    score -=1
+  elif answer == "c":
+    output = "sorry but no"
+    score -=1    
+    
+    
+    
   print()
   print(output)
   print()
@@ -141,7 +164,34 @@ while tracker !=1:
     score +=1
   else:
     output = "Please choose a, b, c or d only."
-    
+ 
+#Next qn
+
+while tracker !=1:
+  
+  print("Q"+str(counter)+") "+ "Who is Nyx?")
+  print("   a) bane of posidien")
+  print("   b) godess of the night")
+  print("   c) godess of spring")
+  print("   d) godess of misery")
+  answer = input("Your answer: ")
+  answer = answer.lower()
+  if answer == "a":
+    output = "no"
+    tracker =1
+    score -=1
+  elif answer == "b":
+    output = "Correct"
+    score +=1
+  elif answer == "c":
+    output = "sorry but no"
+    score -=1
+  elif answer=="d":
+    output="Incorrect"
+    score-=1
+
+
+
   print()
   print(output.lower())
   print()
