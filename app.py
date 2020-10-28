@@ -141,7 +141,75 @@ while tracker !=1:
     score +=1
   else:
     output = "Please choose a, b, c or d only."
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#new qn
+while tracker !=1:
+  
+  print("Q"+str(counter)+") "+ "Which of the following is not an olympian?")
+  print("   a) Vulcan")
+  print("   b) Athena")
+  print("   c) Diana")
+  print("   d) Khoine")
+  answer = input("Your answer: ")
+  answer = answer.lower()
+  if answer == "a":
+    output = "that's not quite right"
+    score -=1
+  elif answer == "b":
+    output = "are you really sure?"
+    score -=1
+  elif answer == "c":
+    output = "no!!!"
+    score -=1
     
+  elif answer == "d":
+    output = "correct"
+    tracker =1
+    score +=1
+  else:
+    output = "Please choose a, b, c or d only."
   print()
   print(output.lower())
   print()
