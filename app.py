@@ -13,8 +13,8 @@ while tracker !=1:
   
   print("Q"+str(counter)+") "+ "Who is the father of the olympians?")
   print("   a) Kronos")
-  print("   b) Ouranus")
-  print("   c) Kronas")
+  print("   b) Mercury")
+  print("   c) Jesu1s")
   print("   d) Uranus")
   answer = input("Your answer: ")
   answer = answer.lower()
@@ -122,7 +122,7 @@ while tracker !=1:
   print("   a) Neptune, Zeus")
   print("   b) Pluto, Poseidon")
   print("   c) Poseidon, Jupiter")
-  print("   d) Neptune, Juno")
+  print("   d) Neptune, Apollo")
   answer = input("Your answer: ")
   answer = answer.lower()
   if answer == "a":
